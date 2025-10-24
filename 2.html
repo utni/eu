@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İptal Davası (Madde 263) Sunumu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Slayt geçişi için temel animasyon */
+        .slide {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.98); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+
+    <!-- Slayt Göstergesi -->
+    <div id="slide-deck" class="w-full max-w-5xl h-[70vh] bg-white rounded-lg shadow-2xl overflow-hidden">
+        <!-- Slayt içeriği buraya dinamik olarak eklenecek -->
+    </div>
+
+    <!-- Navigasyon ve Sayaç -->
+    <div class="flex justify-between items-center w-full max-w-5xl mt-6">
+        <button id="prev-btn" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-200 disabled:bg-gray-400 disabled:cursor-not-allowed">
+            &larr; Önceki
+        </button>
+        <div id="slide-counter" class="text-lg font-medium text-gray-700">
+            Slayt 1 / 1
+        </div>
+        <button id="next-btn" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-200 disabled:bg-gray-400 disabled:cursor-not-allowed">
+            Sonraki &rarr;
+        </button>
+    </div>
+
+    <script>
+        // Markdown içeriğini buraya yapıştırıyoruz
+        const markdownContent = `
+# The Action for Annulment: Article 263 TFEU
+
+A Cornerstone of the European Union's System of Judicial Review
+
+---
+
+## Introduction: The EU as a "Community Based on the Rule of Law"
+
+* **Core Principle:** The EU is founded on the rule of law. Neither Member States nor institutions can escape judicial review.
+
+  * **Source:** *Parti écologiste ‘Les Verts’ v European Parliament* (Case 294/83).
+
+* **Article 19(1) TEU:** Entrusts the CJEU to ensure "in the interpretation and application of the Treaties the law is observed."
+
+* **Article 263 TFEU:** The primary and most direct tool for judicial review of EU acts.
+
+---
+
+## The Central Tension
+
+A fundamental conflict between:
+
+1. **The Promise:** A comprehensive system of judicial review for all.
+
+2. **The Reality:** Highly restrictive access (*locus standi*) for individuals (natural and legal persons).
+
+This reflects the EU's decentralized judicial system, balancing direct review (Art. 263) with the role of national courts (Art. 267).
+
+---
+
+## Part 1: What is a 'Reviewable Act'?
+
+* **Art. 263(1) TFEU:** The Court reviews the legality of:
+
+  * Legislative acts.
+
+  * Acts of the Council, Commission, and ECB (other than recommendations/opinions).
+
+  * Acts of the European Parliament and European Council *intended to produce legal effects*.
+
+  * Acts of EU bodies, offices, or agencies *intended to produce legal effects*.
+
+---
+
+## The "Substance Over Form" Doctrine
+
+* **Key Principle:** The Court looks at the *effect* of an act, not its name or form.
+
+* **Landmark Case:** *Commission v Council (ERTA)* (Case 22/70).
+
+* **Test:** Does the act "produce legal effects" or bring about a "distinct change in the legal position"?
+
+* **Result:** Allows the Court to review *sui generis* acts like Council deliberations, conclusions, etc., if they are binding.
+
+---
+
+## The Contested Frontier: "Soft Law"
+
+* **What is it?** Non-binding instruments like communications, guidelines, and notices.
+
+* **The Problem:** These acts can have profound *practical* effects but are formally non-binding.
+
+* **The Rule:** Art. 263(1) explicitly excludes "recommendations and opinions."
+
+* **Court's Position:** Generally holds that soft law is non-reviewable because it lacks *legally binding effects*.
+
+* **Dilemma:** This creates a potential gap in judicial protection.
+
+---
+
+## Part 2: Who Can Bring an Action? (*Locus Standi*)
+
+Article 263 establishes a clear hierarchy of applicants:
+
+1. **Privileged Applicants**
+
+2. **Semi-Privileged Applicants**
+
+3. **Non-Privileged Applicants**
+
+---
+
+## Privileged Applicants (Art. 263(2))
+
+* **Who:** Member States, European Parliament, Council, and Commission.
+
+* **Standing:** Absolute and unconditional.
+
+* **Rationale:** They act "in the interests of legality" as guardians of the Treaties. They do not need to prove any specific interest in the case.
+
+---
+
+## Semi-Privileged Applicants (Art. 263(3))
+
+* **Who:** Court of Auditors, European Central Bank (ECB), and Committee of the Regions.
+
+* **Standing:** Conditional.
+
+* **Test:** They can only bring an action "for the purpose of protecting their prerogatives." They must show the act infringes on their specific powers.
+
+---
+
+## Non-Privileged Applicants (Art. 263(4))
+
+* **Who:** Natural and legal persons (individuals, companies, NGOs).
+
+* **This is the most complex and restrictive area.**
+
+* The Treaty provides three distinct gateways for standing.
+
+---
+
+## Gateway 1: Act Addressed to the Applicant
+
+* **Test:** The individual is the *direct addressee* of the act.
+
+* **Example:** A Commission decision imposing a competition fine on a specific company.
+
+* **Standing:** Automatic and straightforward.
+
+---
+
+## Gateway 2: The Classic Test
+
+* **Used for:** Acts *not* addressed to the applicant (e.g., a regulation or a decision addressed to a Member State).
+
+* **The Test:** The applicant must prove **TWO** cumulative conditions:
+
+  1. **Direct Concern**
+
+  2. **Individual Concern**
+
+---
+
+## Classic Test: (1) Direct Concern
+
+* The act must *directly affect* the applicant's legal situation.
+
+* It must leave *no discretion* to the implementing authority (e.g., a Member State).
+
+* If a Member State has any genuine discretion in applying the act, the test for direct concern fails.
+
+---
+
+## Classic Test: (2) Individual Concern
+
+* This is the most formidable obstacle in EU law.
+
+* **The *Plaumann* Test** (Case 25/62 *Plaumann v Commission*):
+
+  > "...affects them by reason of certain attributes which are peculiar to them or by reason of circumstances in which they are differentiated from all other persons..."
+
+* **In Practice:** The applicant must belong to a "fixed, closed class" of persons identifiable *at the moment the act was adopted*.
+
+* Being part of an "open class" (like "all current and future importers of clementines") is not enough.
+
+---
+
+## Gateway 3: The Lisbon Reform
+
+* A third limb was added to Art. 263(4) to *supposedly* relax the *Plaumann* test.
+
+* **The New Test:** An individual can challenge a **"regulatory act"** which is of:
+
+  1. **Direct Concern** to them
+
+  2. **AND** "does not entail implementing measures."
+
+* **Key change:** The "individual concern" (*Plaumann*) test is removed for this specific category.
+
+---
+
+## Lisbon Reform Curtailed (1/2)
+
+The CJEU's interpretation has severely limited the reform's impact.
+
+* **What is a "Regulatory Act"?**
+
+* **Case:** *Inuit Tapiriit Kanatami* (C-583/11 P).
+
+* **Ruling:** A 'regulatory act' is any act of general application *except for legislative acts*.
+
+* **Impact:** All acts adopted via the ordinary or special legislative procedure (i.e., most major regulations and directives) are **EXCLUDED** from this new, easier test.
+
+* To challenge a *legislative act*, you must still use the *Plaumann* test.
+
+---
+
+## Lisbon Reform Curtailed (2/2)
+
+* **What does "does not entail implementing measures" mean?**
+
+* **Case:** *Telefónica v Commission* (C-274/12 P).
+
+* **Ruling:** Any subsequent act required for execution, even a "mere check" or a national act to recover state aid, is an "implementing measure."
+
+* **Impact:** This closes the door on the new test in almost all cases where a Member State is involved.
+
+* **Result:** The Lisbon reform has been largely neutralized by the Court. The *Plaumann* test remains dominant.
+
+---
+
+## Part 3: The Grounds for Annulment
+
+If standing is established, the action must be based on one of four grounds (Art. 263(2)):
+
+1. **Lack of competence**
+
+2. **Infringement of an essential procedural requirement**
+
+3. **Infringement of the Treaties or any rule of law**
+
+4. **Misuse of powers**
+
+---
+
+## Grounds 1 & 2: Procedural and Competence
+
+* **1. Lack of Competence:** The EU institution acted *ultra vires* (beyond its powers).
+
+  * Violates the principle of conferral (Art. 5 TEU).
+
+* **2. Infringement of an Essential Procedural Requirement:** The correct decision-making process was not followed.
+
+  * **Example:** Failure to consult the European Parliament when required (*Isoglucose* cases).
+
+  * **Example:** Failure to provide a proper statement of reasons (Art. 296 TFEU).
+
+* The Court will raise these two grounds *of its own motion*.
+
+---
+
+## Ground 3: Infringement of the Treaties / Rule of Law
+
+* The broadest and most common "catch-all" ground.
+
+* Covers any substantive violation of EU law, including:
+
+  * The **Treaties** (TEU, TFEU).
+
+  * The **Charter of Fundamental Rights**.
+
+  * **General Principles of EU Law** (proportionality, legal certainty, legitimate expectations, non-discrimination).
+
+* This is the primary vehicle for the CJEU's constitutional review.
+
+---
+
+## Ground 4: Misuse of Powers
+
+* **Original name:** *Détournement de pouvoir*.
+
+* **Definition:** The institution used its powers for a purpose *other than* the one for which they were granted.
+
+* **Challenges:**
+
+  * It concerns the *subjective motive* of the institution.
+
+  * It is extremely difficult to prove.
+
+* This ground is very rarely successful.
+
+---
+
+## Part 4: The Effects of Annulment (Art. 264 & 266)
+
+* **If the action succeeds, the act is declared "void" (Art. 264).**
+
+* **Effect 1: *Ex Tunc***
+
+  * The annulment is retroactive. The act is considered to have *never existed*.
+
+* **Effect 2: *Erga Omnes***
+
+  * The judgment is binding on *everyone*, not just the parties to the case.
+
+---
+
+## Effects: The Court's Discretion
+
+* **The Problem:** Retroactive annulment can create a legal vacuum and chaos, upsetting legal certainty.
+
+* **The Solution: Art. 264(2) TFEU**
+
+  * The Court can "state which of the effects of the act... shall be considered as definitive."
+
+* **In Practice:** The Court can maintain the effects of the annulled act (making the annulment *ex nunc* - from this point forward) until a new, legal act is adopted.
+
+* This balances the **Rule of Law** with **Legal Certaınty**.
+
+---
+
+## Effects: The Obligation to Comply (Art. 266)
+
+* The institution whose act was annulled "shall be required to take the necessary measures to comply with the judgment."
+
+* This means they must act to fill the legal void, for example, by adopting a new, corrected act that respects the Court's reasoning.
+
+---
+
+## Conclusion: The "Complete System of Legal Remedies"
+
+* The CJEU defends restrictive standing rules by pointing to a "complete system" of judicial review.
+
+* This system is a *balance* between two main routes:
+
+  1. **Direct Action (Art. 263):** For privileged applicants and, in rare cases, individuals.
+
+  2. **Indirect Action (Art. 267):** The preliminary ruling procedure.
+
+---
+
+## The Preferred Path: Article 267 TFEU
+
+* When an individual is affected by an EU act that requires national implementation:
+
+  1. They must challenge the *national implementing measure* in their *national court*.
+
+  2. The national court can (or must) then ask the CJEU to rule on the validity of the underlying EU act via a **preliminary reference (Art. 267)**.
+
+* This is the CJEU's preferred route, as it fosters judicial dialogue and preserves the federal structure.
+
+---
+
+## Final Analysis
+
+* **For Institutions:** Art. 263 is a powerful tool to police the institutional balance and legality of EU acts.
+
+* **For Individuals:** The "complete system" is more of an *institutional* guarantee than a practical one.
+
+* The path to justice for an individual is often:
+
+  * Indirect (via national courts).
+
+  * Costly and time-consuming.
+
+  * Uncertain (depends on the national judge making a reference).
+
+* The system prioritizes the **uniformity of EU law** and **judicial federalism** over simple, direct access for its citizens.
+
+---
+
+## Key Case Law Summary
+
+* ***Les Verts***** (1986):** Established the EU as a "Community based on the rule of law."
+
+* ***ERTA***** (1971):** Created the "substance over form" doctrine for reviewable acts.
+
+* ***Plaumann***** (1963):** Established the strict "individual concern" test.
+
+* ***Inuit***** (2013):** Narrowly defined "regulatory act," excluding all legislative acts from the easier Lisbon test.
+
+* ***Telefónica***** (2013):** Narrowly defined "does not entail implementing measures," further limiting the Lisbon test.
+`;
+
+        const slideDeck = document.getElementById('slide-deck');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const slideCounter = document.getElementById('slide-counter');
+
+        let slides = [];
+        let currentSlide = 0;
+
+        function parseMarkdown(markdown) {
+            const slideContents = markdown.trim().split(/\n---\n/);
+            slides = slideContents.map((slideText, index) => {
+                const lines = slideText.trim().split('\n');
+                let html = '<div class="slide p-8 md:p-12 overflow-y-auto h-full" data-index="' + index + '">';
+                
+                let inList = false;
+                let inNumberedList = 0;
+
+                lines.forEach(line => {
+                    line = line.trim();
+                    if (!line) return;
+
+                    // Başlıklar
+                    if (line.startsWith('## ')) {
+                        if (inList) { html += '</ul>'; inList = false; }
+                        if (inNumberedList) { html += '</ol>'; inNumberedList = 0; }
+                        html += `<h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-800">${line.substring(3)}</h2>`;
+                    } else if (line.startsWith('# ')) {
+                        if (inList) { html += '</ul>'; inList = false; }
+                        if (inNumberedList) { html += '</ol>'; inNumberedList = 0; }
+                        html += `<h1 class="text-4xl md:text-5xl font-bold mb-8 text-center text-blue-900">${line.substring(2)}</h1>`;
+                    } 
+                    // Madde imli listeler
+                    else if (line.startsWith('* ')) {
+                        if (inNumberedList) { html += '</ol>'; inNumberedList = 0; }
+                        if (!inList) {
+                            html += '<ul class="list-disc pl-8 space-y-3 text-lg md:text-xl text-gray-800">';
+                            inList = true;
+                        }
+                        // Alt maddeler için basit kontrol
+                        if (line.startsWith('  * ')) {
+                             html += `<li class="ml-6">${line.substring(4).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</li>`;
+                        } else {
+                             html += `<li>${line.substring(2).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</li>`;
+                        }
+                    } 
+                    // Numaralı listeler
+                    else if (line.match(/^(\d+)\. /)) {
+                         if (inList) { html += '</ul>'; inList = false; }
+                         if (!inNumberedList) {
+                            html += '<ol class="list-decimal pl-8 space-y-3 text-lg md:text-xl text-gray-800">';
+                            inNumberedList = 1;
+                         }
+                         html += `<li>${line.substring(line.indexOf(' ') + 1).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</li>`;
+                    }
+                    // Alıntılar
+                     else if (line.startsWith('> ')) {
+                        if (inList) { html += '</ul>'; inList = false; }
+                        if (inNumberedList) { html += '</ol>'; inNumberedList = 0; }
+                        html += `<blockquote class="border-l-4 border-gray-300 pl-4 italic text-gray-600 my-4">${line.substring(2)}</blockquote>`;
+                    }
+                    // Normal Paragraf
+                    else {
+                        if (inList) { html += '</ul>'; inList = false; }
+                        if (inNumberedList) { html += '</ol>'; inNumberedList = 0; }
+                        html += `<p class="text-lg md:text-xl text-gray-800 mt-4">${line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</p>`;
+                    }
+                });
+
+                if (inList) html += '</ul>';
+                if (inNumberedList) html += '</ol>';
+                html += '</div>';
+                return html;
+            });
+        }
+
+        function renderSlide() {
+            // Önceki slaytı gizle
+            const currentActive = document.querySelector('.slide.active');
+            if (currentActive) {
+                currentActive.classList.remove('active');
+            }
+
+            // Yeni slaytı göster
+            const newSlide = slideDeck.children[currentSlide];
+            if (newSlide) {
+                newSlide.classList.add('active');
+            }
+
+            // Sayacı güncelle
+            slideCounter.textContent = `Slayt ${currentSlide + 1} / ${slides.length}`;
+
+            // Düğmeleri etkinleştir/devre dışı bırak
+            prevBtn.disabled = (currentSlide === 0);
+            nextBtn.disabled = (currentSlide === slides.length - 1);
+        }
+
+        function initDeck() {
+            parseMarkdown(markdownContent);
+            slideDeck.innerHTML = slides.join('');
+            if (slideDeck.children[0]) {
+                slideDeck.children[0].classList.add('active');
+            }
+            renderSlide();
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                currentSlide--;
+                renderSlide();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                renderSlide();
+            }
+        });
+
+        // Başlangıç
+        initDeck();
+    </script>
+</body>
+</html>
